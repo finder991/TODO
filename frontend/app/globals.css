@@ -187,7 +187,7 @@ select {
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-size: 16px; 
+  font-size: 16px;
   font-family: var(--font);
   background: var(--bg-secondary);
   color: var(--text);
@@ -205,6 +205,14 @@ select:focus {
 input::placeholder,
 textarea::placeholder {
   color: var(--muted);
+}
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 
 textarea {
@@ -501,6 +509,7 @@ select {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -628,7 +637,7 @@ select {
     padding: 24px 20px;
   }
 
-  
+
   .task {
     flex-direction: column;
     gap: 10px;
@@ -643,7 +652,7 @@ select {
     flex: 1;
   }
 
-  
+
   .add-task-form .form-row .grow {
     flex: 1 1 100%;
   }
